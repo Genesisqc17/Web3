@@ -1,0 +1,11 @@
+{
+	"Arrow fct": {
+			"prefix": "ar",
+			"body": [
+				"($1) => {",
+				"\t$2",
+				"}"
+			],
+			"description": "An arrow function"
+	}
+}

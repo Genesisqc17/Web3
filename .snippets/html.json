@@ -1,0 +1,64 @@
+{
+	"PHP tags": {
+		"prefix": "phpt",
+		"body": [
+			"<?php",
+			"\t$0",
+			"?>"
+		],
+		"description": "PHP opening and closing tags"
+	},
+	"PHP echo tags": {
+		"prefix": "phpe",
+		"body": [
+			"<?= ${1} ?>$0"
+		],
+		"description": "PHP echo tags"
+	},
+	"PHP tags (reverse)": {
+		"prefix": "phpr",
+		"body": [
+			"?>",
+			"$0",
+			"<?php"
+		],
+		"description": "PHP tags (reverse)"
+	},
+	"Framework base" : {
+		"prefix" : "phpx",
+		"body" : [
+			"<?php",
+			"\trequire_once(\"action/${1}Action.php\");",
+			"",
+			"\t\\$action = new ${1}Action();",
+			"\t\\$data = \\$action->execute();",
+			"",
+			"\trequire_once(\"partial/header.php\");",
+			"?>",
+			"$0",
+			"<?php",
+			"\trequire_once(\"partial/footer.php\");"
+		],
+		"description": "Create base code for framework"
+	},
+	"Framework base (action)" : {
+		"prefix" : "phpc",
+		"body" : [
+			"<?php",
+			"\trequire_once(\"action/CommonAction.php\");",
+			"",
+			"\tclass ${1}Action extends CommonAction {",
+			"",
+			"\t\tpublic function __construct() {",
+			"\t\t\tparent::__construct(CommonAction::\\$VISIBILITY_${2});",
+			"\t\t}",
+			"",
+			"\t\tprotected function executeAction() {",
+			"\t\t\t$0",
+			"\t\t\treturn [];",
+			"\t\t}",
+			"\t}"
+		],
+		"description": "Create base code for framework (action)"
+	}
+}
