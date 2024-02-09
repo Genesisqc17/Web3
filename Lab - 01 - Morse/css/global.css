@@ -1,0 +1,19 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100px;
+}
+
+#background {
+    position:fixed;
+    background-image:url('../images/morse.png');
+    background-repeat:no-repeat;
+    background-position:bottom left;
+    height:400px;
+    width:400px;
+    bottom:0px;
+    z-index:-1;
+}
