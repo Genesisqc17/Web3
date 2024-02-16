@@ -1,3 +1,6 @@
 Vincent;Double;
 Charles;Suite;
 Francois;Simple;
+JeanPierre;Double;
+Jean;Suite;
+Pascal;Double;
