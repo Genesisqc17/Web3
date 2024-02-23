@@ -31,6 +31,7 @@
              // Design pattern (une solution reconnue pour un problème courant)
              // Template method
              $data = $this->executeAction();
+             $data["visibility"] = !empty($_SESSION["visibility"]) ? $_SESSION["visibility"] : 0;
              $data["isLoggedIn"] = $_SESSION["visibility"] > CommonAction::$VISIBILITY_PUBLIC;
              $data["username"] = !empty($_SESSION["username"]) ? $_SESSION["username"] : "Invité";
              return $data;

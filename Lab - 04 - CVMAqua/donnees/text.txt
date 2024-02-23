@@ -1,0 +1,2 @@
+<p>Ceci prouve que j'ai reussi a faire un CMS</p>
+<p>YOUPPPPPPIE</p>

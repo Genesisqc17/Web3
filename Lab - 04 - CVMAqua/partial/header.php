@@ -22,7 +22,26 @@
 		    				<li><a href="index.php">Accueil</a></li>
 		    				<li><a href="images.php">Galerie photos</a></li>
 		    				<li><a href="contact.php">Contactez-nous</a></li>
-							<li><a href="login.php">Se connecter</a></li>
+							<?php
+								if(!$data["isLoggedIn"]){
+									?>
+										<li><a href="login.php">Se connecter</a></li>
+									<?php
+								}else{
+									?>
+									<div>
+										<a href="?logout=true">
+											Déconnexion
+										</a>
+									</div>
+							<?php
+								}
+								if($data["visibility"] == 3){
+									?>
+										<li><a href="admin-index.php">Outil Administrateur</a></li>
+									<?php
+								}
+							?>
 		    			</ul>
 		    		</div>
 		    		<div class="clear"></div>

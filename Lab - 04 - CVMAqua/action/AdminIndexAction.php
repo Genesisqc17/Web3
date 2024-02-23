@@ -1,5 +1,6 @@
 <?php
     require_once("action/CommonAction.php");
+    require_once("action/DAO/ContentDAO.php");
 
     class AdminIndexAction extends CommonAction {
 
@@ -8,7 +9,9 @@
         }
 
         protected function executeAction() {
-            
+            if(!empty($_GET["texte"])){
+                contentDAO::setContent($_GET["texte"]);
+            }
             return [];
         }
     }
