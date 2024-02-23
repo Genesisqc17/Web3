@@ -1,0 +1,33 @@
+
+.formSpacer  {
+	height:10px;
+}
+
+.formLabel {
+	width:150px;
+}
+
+.formInput {
+	width:150px;
+}
+
+#pageIndex {
+	margin:150px auto;
+	width:500px;
+}
+
+#pageIndex .authSection {
+	background-image:url('../images/security.png');
+	background-position:0% 50%;
+	background-repeat:no-repeat;
+	padding-left:256px;
+	height:256px;
+}
+
+#pageIndex .wrongInfoProvidedSection {
+	background-color:pink;
+	border:1px solid red;
+	color:red;
+	padding:5px;
+	margin-bottom:10px;
+}
